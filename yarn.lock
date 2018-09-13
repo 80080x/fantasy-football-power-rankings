@@ -10,6 +10,12 @@
     pify "3.0.0"
     tough-cookie "2.3.2"
 
+"@babel/runtime@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@cypress/listr-verbose-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@cypress/listr-verbose-renderer/-/listr-verbose-renderer-0.4.1.tgz#a77492f4b11dcc7c446a34b3e28721afd33c642a"
@@ -22,6 +28,13 @@
 "@cypress/xvfb@1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cypress/xvfb/-/xvfb-1.0.4.tgz#e7391d534baef2b180bd84fdc2ffea1020f7d6a5"
+
+"@semantic-ui-react/event-stack@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-2.0.0.tgz#d2d568a9fb0ee204b0e40d6b73ac2a2403c08451"
+  dependencies:
+    exenv "^1.2.2"
+    prop-types "^15.6.2"
 
 "@types/node@^6.0.46":
   version "6.0.89"
@@ -982,7 +995,7 @@ babel-register@^6.24.1, babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.25.0, babel-runtime@^6.26.0:
+babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -1404,9 +1417,9 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
 clean-css@4.1.x:
   version "4.1.9"
@@ -2511,6 +2524,10 @@ execa@^0.8.0:
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
+
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
 
 exit-hook@^1.0.0:
   version "1.1.1"
@@ -4026,6 +4043,10 @@ jsx-ast-utils@^1.4.0, jsx-ast-utils@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.4.1.tgz#3867213e8dd79bf1e8f2300c0cfc1efb182c0df1"
 
+keyboard-key@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/keyboard-key/-/keyboard-key-1.0.2.tgz#212e14dde4c2059814336159bbc5acd0a348ca6b"
+
 kind-of@^3.0.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -4220,6 +4241,10 @@ lodash.uniq@^4.5.0:
 lodash@4.17.4, "lodash@>=3.5 <5", lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
+lodash@^4.17.10:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
 log-symbols@^1.0.2:
   version "1.0.2"
@@ -5283,11 +5308,18 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0:
+prop-types@^15.5.4, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
+prop-types@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
@@ -5619,6 +5651,10 @@ regenerator-runtime@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz#7e54fe5b5ccd5d6624ea6255c3473be090b802e1"
 
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+
 regenerator-transform@0.9.11:
   version "0.9.11"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.9.11.tgz#3a7d067520cb7b7176769eb5ff868691befe1283"
@@ -5882,14 +5918,17 @@ semantic-ui-css@^2.2.12:
   dependencies:
     jquery x.*
 
-semantic-ui-react@^0.75.1:
-  version "0.75.1"
-  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.75.1.tgz#81c2ed7ed45562f89e5049c5a64195b9638d8daf"
+semantic-ui-react@^0.82.5:
+  version "0.82.5"
+  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.82.5.tgz#3bc098a0b22d3a76d8d7fb020dee07311bc2784f"
   dependencies:
-    babel-runtime "^6.25.0"
-    classnames "^2.2.5"
-    lodash "^4.17.4"
-    prop-types "^15.5.10"
+    "@babel/runtime" "^7.0.0"
+    "@semantic-ui-react/event-stack" "^2.0.0"
+    classnames "^2.2.6"
+    keyboard-key "^1.0.2"
+    lodash "^4.17.10"
+    prop-types "^15.6.2"
+    shallowequal "^1.1.0"
 
 semver-diff@^2.0.0:
   version "2.1.0"
@@ -5974,6 +6013,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallowequal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
 
 shebang-command@^1.2.0:
   version "1.2.0"
